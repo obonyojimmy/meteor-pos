@@ -1,0 +1,6 @@
+{
+  "extends": "@meteorjs/eslint-config-meteor",
+  "rules": {
+    "import/prefer-default-export": 0
+  }
+}

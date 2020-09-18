@@ -1,0 +1,24 @@
+{
+  "name": "meteor-pos",
+  "description": "Meteor point of sale CRM app",
+  "repository": "https://github.com/obonyojimmy/meteor-pos",
+  "keywords": ["pos", "meteor", "crm"],
+  "website": "https://github.com/obonyojimmy/meteor-pos",
+  "addons": [
+    "logentries"
+  ],
+  "buildpacks": [
+    { "url": "https://github.com/RocketChat/meteor-buildpack-horse.git" }
+  ],
+  "env": {
+    "ROOT_URL": {
+      "description": "IMPORTANT! Must be 'https://<App Name>.herokuapp.com' Replace <App Name> with the value you provided at the top. This will be the full URL of your App",
+      "required": true
+    },
+    "MONGO_URL": {
+      "description": "Please mongo url for the app",
+      "required": true
+    }
+  },
+  "success_url": "/"
+}
